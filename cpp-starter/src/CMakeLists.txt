@@ -10,3 +10,14 @@
 #   wSenderOpt
 #   wReceiverOpt
 
+cmake_policy(SET CMP0167 NEW)
+
+cmake_minimum_required(VERSION 3.10)
+project(WTP)
+
+set(CMAKE_CXX_STANDARD 11)
+
+add_executable(wSender wSender.cpp)
+add_executable(wReceiver wReceiver.cpp)
+add_executable(wSenderOpt wSenderOpt.cpp)
+add_executable(wReceiverOpt wReceiverOpt.cpp)
